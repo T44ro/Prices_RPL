@@ -20,7 +20,7 @@ class _SettingsPageState extends State<SettingsPage> {
   final AudioPlayer _audioPlayer = AudioPlayer();
 
   // Fungsi simulasi scan selesai
-  void _onScanDone() async {
+  void onScanDone() async {
     if (vibrateOnScan) {
       if (await Vibration.hasVibrator() ?? false) {
         Vibration.vibrate(duration: 100);
