@@ -86,7 +86,7 @@ class _SecondState extends State<Second> {
                     ),
                     onPressed: scanCode,
                     child: const Text(
-                      'Scan QR / Barcode',
+                      'START SCAN',
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
