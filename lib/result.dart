@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatefulWidget {
+  const ResultPage({super.key});
+
   @override
   _ResultPageState createState() => _ResultPageState();
 }
@@ -31,8 +33,8 @@ class _ResultPageState extends State<ResultPage> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: Text("Cancel", style: TextStyle(color: Colors.white)),
             style: TextButton.styleFrom(backgroundColor: Color(0xFFB0BEC5)),
+            child: Text("Cancel", style: TextStyle(color: Colors.white)),
           ),
           TextButton(
             onPressed: () {
@@ -41,8 +43,8 @@ class _ResultPageState extends State<ResultPage> {
               });
               Navigator.pop(context);
             },
-            child: Text("OK", style: TextStyle(color: Colors.white)),
             style: TextButton.styleFrom(backgroundColor: Color(0xFF4F6EF7)),
+            child: Text("OK", style: TextStyle(color: Colors.white)),
           ),
         ],
       ),

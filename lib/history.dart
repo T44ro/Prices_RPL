@@ -5,7 +5,7 @@ import 'dart:convert';
 class HistoryPage extends StatefulWidget {
   final VoidCallback onBackToHome;
 
-  const HistoryPage({Key? key, required this.onBackToHome}) : super(key: key);
+  const HistoryPage({super.key, required this.onBackToHome});
 
   @override
   _HistoryPageState createState() => _HistoryPageState();
@@ -78,16 +78,16 @@ class _HistoryPageState extends State<HistoryPage> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text("NO", style: TextStyle(color: Colors.white)),
             style: TextButton.styleFrom(backgroundColor: const Color(0xFFB0BEC5)),
+            child: const Text("NO", style: TextStyle(color: Colors.white)),
           ),
           TextButton(
             onPressed: () {
               _clearHistory();
               Navigator.pop(context);
             },
-            child: const Text("YES", style: TextStyle(color: Colors.white)),
             style: TextButton.styleFrom(backgroundColor: const Color(0xFF4F6EF7)),
+            child: const Text("YES", style: TextStyle(color: Colors.white)),
           ),
         ],
       ),
