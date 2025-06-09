@@ -10,8 +10,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,8 +25,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
-
   @override
   _MainScreenState createState() => _MainScreenState();
 }
@@ -44,7 +40,7 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final List<Widget> tabs = [
+    final List<Widget> _tabs = [
       HistoryPage(onBackToHome: _goToHomeTab),
       Home(),
       SettingsPage(onBackToHome: _goToHomeTab),
@@ -68,7 +64,7 @@ class _MainScreenState extends State<MainScreen> {
         ),
         Scaffold(
           backgroundColor: Colors.transparent,
-          body: tabs[_currentIndex],
+          body: _tabs[_currentIndex],
           bottomNavigationBar: ClipRect(
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 7.0, sigmaY: 7.0),
@@ -104,8 +100,6 @@ class _MainScreenState extends State<MainScreen> {
 }
 
 class Home extends StatelessWidget {
-  const Home({super.key});
-
   @override
   Widget build(BuildContext context) {
     final double tabBarHeight = kBottomNavigationBarHeight;

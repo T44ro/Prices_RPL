@@ -13,15 +13,15 @@ dependencies:
   cupertino_icons: ^1.0.8
   barcode_widget: ^2.0.4
   flutter_barcode_scanner_plus: ^3.0.8
-  mobile_scanner: ^3.5.7   
-  photo_manager: ^3.0.1+1  
-  image_picker: ^1.0.7     
-  http: ^1.1.0             
+  mobile_scanner: ^3.5.7   # atau terbaru (pastikan support AGP 8)
+  photo_manager: ^3.0.1+1  # versi paling baru yang support namespace
+  image_picker: ^1.0.7     # ini sudah oke
+  http: ^1.1.0             # opsional tapi disarankan
   shared_preferences: ^2.2.2
   vibration: ^3.1.3
-  audioplayers: ^5.2.1     
-  share_plus: ^7.2.1       
-  url_launcher: ^6.2.5     
+  audioplayers: ^5.2.1     # versi stabil terbaru
+  share_plus: ^7.2.1       # versi stabil terbaru
+  url_launcher: ^6.2.5     # ini juga sudah oke
 
 dev_dependencies:
   flutter_test:

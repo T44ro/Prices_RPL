@@ -74,7 +74,7 @@ class _ResultPageState extends State<ResultPage> {
                 ),
               ),
             );
-          }
+          };
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.history), label: 'History'),
